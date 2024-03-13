@@ -4,7 +4,10 @@ library(janitor)
 
 # Define the output file path relative to the location of the script
 
-output_file <- paste0("C:/Users/kirst/Sync/Projects/run_r_with_bat_file/Data", "/starwars.csv")
+PATH <- "C:/Users/kirst/Sync/Projects/run_r_with_bat_file/Data"
+FILENAME <-  "/starwars.csv"
+
+output_file <- paste0(PATH, FILENAME)
 
 # Generate the CSV file
 starwars_df <- starwars %>% 
