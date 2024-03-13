@@ -16,4 +16,4 @@ REM Execute the R script
 "%rscript%" "%rscript_file2%"
 "%rscript%" "%rscript_file3%"
 
-EXIT
+PAUSE

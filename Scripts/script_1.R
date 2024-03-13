@@ -1,5 +1,6 @@
 library(tidyverse)
 library(here)
+library(janitor)
 
 # Define the output file path relative to the location of the script
 
@@ -8,4 +9,5 @@ output_file <- paste0("C:/Users/kirst/Sync/Projects/run_r_with_bat_file/Data", "
 # Generate the CSV file
 starwars_df <- starwars %>% 
     select(name, species, homeworld) %>% 
+    clean_names() %>% 
     write_csv(output_file)
