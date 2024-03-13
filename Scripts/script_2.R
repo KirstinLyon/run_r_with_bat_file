@@ -1,4 +1,5 @@
 library(tidyverse)
+library(here)
 
 PATH <- "C:/Users/kirst/Sync/Projects/run_r_with_bat_file/Data"
 FILENAME <-"/world_bank_pop_df.csv"
