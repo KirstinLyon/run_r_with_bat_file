@@ -1,6 +1,3 @@
-rem LOOKHERE!! https://www.r-bloggers.com/2023/06/how-to-use-a-windows-bat-file-to-execute-an-r-script/
-
-
 @echo off
 
 REM Define the path to Rscript executable
