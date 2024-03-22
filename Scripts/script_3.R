@@ -1,9 +1,7 @@
 library(tidyverse)
+library(here)
 
-PATH <- "C:/Users/kirst/Sync/Projects/run_r_with_bat_file/Data"
-FILENAME <-"/population_df.csv"
-
-output_file <- paste0(PATH, FILENAME)
+output_file <- here::here("Data", "population_df.csv")
 
 population_df <- population %>% 
     filter(year == 2013) %>% 

@@ -3,11 +3,7 @@ library(here)
 library(janitor)
 
 # Define the output file path relative to the location of the script
-
-PATH <- "C:/Users/kirst/Sync/Projects/run_r_with_bat_file/Data"
-FILENAME <-  "/starwars.csv"
-
-output_file <- paste0(PATH, FILENAME)
+output_file <- here::here("Data", "starwars_df.csv")
 
 # Generate the CSV file
 starwars_df <- starwars %>% 

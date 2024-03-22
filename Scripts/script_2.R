@@ -1,10 +1,7 @@
 library(tidyverse)
 library(here)
 
-PATH <- "C:/Users/kirst/Sync/Projects/run_r_with_bat_file/Data"
-FILENAME <-"/world_bank_pop_df.csv"
-
-output_file <- paste0(PATH, FILENAME)
+output_file <- here::here("Data", "world_bank_pop_df.csv")
 
 world_bank_pop_df <- world_bank_pop %>% 
     select(country, indicator, "2017") %>% 
