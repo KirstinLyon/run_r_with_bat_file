@@ -6,8 +6,15 @@ rem LOOKHERE!! https://www.r-bloggers.com/2023/06/how-to-use-a-windows-bat-file-
 REM Define the path to Rscript executable
 set "rscript=C:\Program Files\R\R-4.3.3\bin\Rscript.exe"
 
-REM Set the common path
-set "common_path=C:\Users\kirst\Sync\Projects\run_r_with_bat_file\Scripts\"
+REM Get the directory of the batch file
+set "batch_dir=%~dp0"
+
+REM Set the common path relative to the batch file location
+set "common_path=%batch_dir%..\Scripts\"
+
+REM Prints the common path to the console
+echo %common_path%
+
 
 REM Define the path to the R script
 set "rscript_file1=%common_path%script_1.R"
